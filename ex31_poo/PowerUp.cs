@@ -13,6 +13,7 @@ namespace ex31_poo
         public override bool IsActive() => (Tag == null || Tag.Length == 0) ?
             false : true;
 
-        public override string ToString() => $"X:{X}\nY:{Y}\nTag:{Tag}\n";
+        public override string ToString() => $"X: {X:f2}\nY: {Y:f2}\n" +
+            $"Tag: {Tag}\n";
     }
 }

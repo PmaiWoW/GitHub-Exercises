@@ -6,7 +6,12 @@ namespace ex31_poo
     {
         static void Main(string[] args)
         {
+            // Pergunta 2
             PowerUp armorPack = new PowerUp();
+            armorPack.Tag = "CRL";
+            Console.WriteLine(armorPack);
+            armorPack.Tag = "Armor+75";
+            Console.WriteLine(armorPack);
 
             // Instrução 1
             // Esta instrução é válida, pois o construtor da classe PowerUp não
@@ -77,12 +82,6 @@ namespace ex31_poo
             // pois implementa a interface ITaggable;
             PowerUp pup = new PowerUp();
             Console.WriteLine($"{pup.Priority()}");// pup: instância de PowerUp
-
-            Console.Write(armorPack.ToString());
-
-            armorPack.Tag = "Armor+75";
-
-            Console.Write(armorPack.ToString());
         }
     }
 }
