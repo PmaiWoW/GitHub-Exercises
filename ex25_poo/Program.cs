@@ -2,7 +2,7 @@
 
 namespace ex25_poo
 {
-    class Program
+    public class Program
     {
         static void Main(string[] args)
         {
@@ -25,7 +25,7 @@ namespace ex25_poo
             while (loop)
             {
                 Console.WriteLine($"Player Move Direction: {p1.Move()}");
-                Console.WriteLine($"NPC Move Direction: {npc1.Move()}");
+                Console.WriteLine($"NPC Move Direction: {npc1.Move()}\n");
             }
         }
     }

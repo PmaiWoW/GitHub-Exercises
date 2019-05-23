@@ -1,13 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace ex25_poo
+﻿namespace ex25_poo
 {
     public abstract class Character
     {
         // Read-Only property for the Character's name
-        protected string Name { get; }
+        public string Name { get; }
 
         public Character(string name)
         {
