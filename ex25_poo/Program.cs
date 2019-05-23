@@ -9,6 +9,8 @@ namespace ex25_poo
             Player p1 = new Player("Archibald Longpants");
             NPC npc1 = new NPC("Bongitard Archlong");
 
+            // Console.WriteLine($"{p1}\n");
+
             bool loop = true;
 
             while (loop)

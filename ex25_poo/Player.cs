@@ -4,7 +4,7 @@ using System.Text;
 
 namespace ex25_poo
 {
-    class Player : Character
+    public class Player : Character
     {
         public Player(string name) : base(name) { }
 

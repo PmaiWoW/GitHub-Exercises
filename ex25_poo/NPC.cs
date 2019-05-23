@@ -4,7 +4,7 @@ using System.Text;
 
 namespace ex25_poo
 {
-    class NPC : Character
+    public class NPC : Character
     {
         private Random rnd;
         private readonly string directions;
