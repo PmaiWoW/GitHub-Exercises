@@ -4,8 +4,8 @@
     {
         public int NumberOfDungeons { get; set; }
 
-        public DungeonMap(string Name, string Filename, int numberOfPlayers,
-            int numberOfDungeons) : base(Name, Filename, numberOfPlayers)
+        public DungeonMap(string name, string filename, int numberOfPlayers,
+            int numberOfDungeons) : base(name, filename, numberOfPlayers)
         {
             NumberOfDungeons = numberOfDungeons;
         }

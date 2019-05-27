@@ -5,8 +5,8 @@
         public float Width { get; }
         public float Height { get; }
 
-        public OpenWorldMap(string Name, string Filename, int numberOfPlayers,
-            float width, float height) : base(Name, Filename, numberOfPlayers)
+        public OpenWorldMap(string name, string filename, int numberOfPlayers,
+            float width, float height) : base(name, filename, numberOfPlayers)
         {
             Width = width;
             Height = height;

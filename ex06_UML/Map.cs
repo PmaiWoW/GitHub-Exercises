@@ -12,10 +12,10 @@ namespace ex06_UML
 
         // Construtor da classe Map, com os parâmetros name, filename e
         // numberOfPlayers
-        public Map(string mapName, string filename, int numberOfPlayers)
+        public Map(string name, string filename, int numberOfPlayers)
         {
             players = new List<Player>();
-            Name = mapName;
+            Name = name;
             Filename = filename;
             // Instancia Players, de número igual à variável numberOfPlayers
             // dada, pedindo os parâmetros necessários para a instanciação

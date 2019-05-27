@@ -6,8 +6,8 @@ namespace ex06_UML
     {
         public int ID { get; }
         public string Name { get; }
-        private readonly double health;
-        private readonly double shield;
+        private double health;
+        private double shield;
 
         public Player(int id, string name, double health, double shield)
         {
