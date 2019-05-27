@@ -11,11 +11,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ex32_poo", "ex32_poo\ex32_p
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ex29_poo", "ex29_poo\ex29_poo.csproj", "{C19EF508-C530-4E5A-A92C-C292B3D7C6FD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ex23_poo", "ex23_poo\ex23_poo.csproj", "{7DD3448C-0C11-4B4B-B4CA-0615F3839790}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ex23_poo", "ex23_poo\ex23_poo.csproj", "{7DD3448C-0C11-4B4B-B4CA-0615F3839790}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ex24_poo", "ex24_poo\ex24_poo.csproj", "{62644873-19CF-4AF2-A125-72CB3A0B0BB8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ex24_poo", "ex24_poo\ex24_poo.csproj", "{62644873-19CF-4AF2-A125-72CB3A0B0BB8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ex25_poo", "ex25_poo\ex25_poo.csproj", "{A26F7F07-C763-4460-902F-52555A966F46}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ex25_poo", "ex25_poo\ex25_poo.csproj", "{A26F7F07-C763-4460-902F-52555A966F46}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ex06_UML", "ex06_UML\ex06_UML.csproj", "{7685576D-663C-4C24-A07E-AEBD44A72177}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,6 +53,10 @@ Global
 		{A26F7F07-C763-4460-902F-52555A966F46}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A26F7F07-C763-4460-902F-52555A966F46}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A26F7F07-C763-4460-902F-52555A966F46}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7685576D-663C-4C24-A07E-AEBD44A72177}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7685576D-663C-4C24-A07E-AEBD44A72177}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7685576D-663C-4C24-A07E-AEBD44A72177}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7685576D-663C-4C24-A07E-AEBD44A72177}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
