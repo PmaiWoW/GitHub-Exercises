@@ -6,6 +6,9 @@ namespace ex06_UML
     {
         internal int gamesPlayed = 0;
         private int numberOfPlayers;
+        DungeonMap dngMap;
+        OpenWorldMap opnWrldMap;
+        Map dngMap2, opnWrldMap2;
 
         internal void GameLoop()
         {
@@ -15,7 +18,7 @@ namespace ex06_UML
             Console.WriteLine("Create Dungeon Map\nHow many players to " +
                 "spawn?");
             numberOfPlayers = Convert.ToInt32(Console.ReadLine());
-            DungeonMap dngMap = new DungeonMap("Dungeon", "dng.PNG", 
+            dngMap = new DungeonMap("Dungeon", "dng.PNG", 
                 numberOfPlayers, 5);
             gamesPlayed++;
 
@@ -26,7 +29,7 @@ namespace ex06_UML
             Console.WriteLine("Create Open World Map\nHow many players to " +
                 "spawn?");
             numberOfPlayers = Convert.ToInt32(Console.ReadLine());
-            OpenWorldMap opnWrldMap = new OpenWorldMap("openWrld",
+            opnWrldMap = new OpenWorldMap("openWrld",
                 "opnWrld.PNG", numberOfPlayers, 100.0f, 150.0f);
             gamesPlayed++;
 
@@ -37,7 +40,7 @@ namespace ex06_UML
             Console.WriteLine("Create Dungeon Map in Map type variable\nHow " +
                 "many players will spawn?");
             numberOfPlayers = Convert.ToInt32(Console.ReadLine());
-            Map dngMap2 = new DungeonMap("Dungeon2", "dng2.PNG", 
+            dngMap2 = new DungeonMap("Dungeon2", "dng2.PNG", 
                 numberOfPlayers, 5);
             gamesPlayed++;
 
@@ -48,7 +51,7 @@ namespace ex06_UML
             Console.WriteLine("Create Open World Map in Map type variable\n" +
                 "How many players will spawn?");
             numberOfPlayers = Convert.ToInt32(Console.ReadLine());
-            Map opnWrldMap2 = new OpenWorldMap("openWrld2",
+            opnWrldMap2 = new OpenWorldMap("openWrld2",
                 "opnWrld2.PNG", numberOfPlayers, 100.0f, 150.0f);
             gamesPlayed++;
 
