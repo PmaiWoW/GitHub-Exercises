@@ -12,8 +12,7 @@
             Height = height;
         }
 
-        public override string ToString() => $"Name: {Name}\nFilename: " +
-            $"{Filename}\nNumber of Players: {players.Count}\n" +
-            $"Width: {Width}\nHeight: {Height}";
+        public override string ToString() => base.ToString() + $"Width: " +
+            $"{Width}\nHeight: {Height}";
     }
 }

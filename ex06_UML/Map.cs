@@ -29,5 +29,13 @@ namespace ex06_UML
 
         public override string ToString() => $"Name: {Name}\nFilename: " +
             $"{Filename}\nNumber of Players: {players.Count}\n";
+
+        public void PrintPlayerNames()
+        {
+            for (int i = 0; i < players.Count; i++)
+            {
+                Console.WriteLine($"Player {i + 1} Name: {players[i].Name}");
+            }
+        }
     }
 }

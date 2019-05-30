@@ -10,8 +10,7 @@
             NumberOfDungeons = numberOfDungeons;
         }
 
-        public override string ToString() => $"Name: {Name}\nFilename: " +
-            $"{Filename}\nNumber of Players: {players.Count}" +
-            $"\nNumber of Dungeons: {NumberOfDungeons}\n";
+        public override string ToString() => base.ToString() + $"Number of " +
+            $"Dungeons: {NumberOfDungeons}\n";
     }
 }

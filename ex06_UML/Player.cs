@@ -16,7 +16,5 @@ namespace ex06_UML
             this.health = health;
             this.shield = shield;
         }
-
-        public void PrintPlayerName() => Console.WriteLine($"{Name}\n");
     }
 }
