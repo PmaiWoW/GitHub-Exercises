@@ -17,9 +17,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ex24_poo", "ex24_poo\ex24_p
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ex25_poo", "ex25_poo\ex25_poo.csproj", "{A26F7F07-C763-4460-902F-52555A966F46}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ex06_UML", "ex06_UML\ex06_UML.csproj", "{7685576D-663C-4C24-A07E-AEBD44A72177}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ex06_UML", "ex06_UML\ex06_UML.csproj", "{7685576D-663C-4C24-A07E-AEBD44A72177}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ex57_basescs", "ex57_basescs\ex57_basescs.csproj", "{52D5CF50-EFF0-43E2-8BC2-0B429FFA6CE0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ex57_basescs", "ex57_basescs\ex57_basescs.csproj", "{52D5CF50-EFF0-43E2-8BC2-0B429FFA6CE0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ex38_poo", "ex38_poo\ex38_poo.csproj", "{9A63E0C8-8E5D-414B-8310-0CF9ECD6D038}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -63,6 +65,10 @@ Global
 		{52D5CF50-EFF0-43E2-8BC2-0B429FFA6CE0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{52D5CF50-EFF0-43E2-8BC2-0B429FFA6CE0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{52D5CF50-EFF0-43E2-8BC2-0B429FFA6CE0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9A63E0C8-8E5D-414B-8310-0CF9ECD6D038}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9A63E0C8-8E5D-414B-8310-0CF9ECD6D038}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9A63E0C8-8E5D-414B-8310-0CF9ECD6D038}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9A63E0C8-8E5D-414B-8310-0CF9ECD6D038}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
