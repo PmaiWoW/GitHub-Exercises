@@ -1,11 +1,13 @@
-﻿namespace ex06_UML
+﻿using System.Collections.Generic;
+
+namespace ex06_UML
 {
     public class DungeonMap : Map
     {
         public int NumberOfDungeons { get; set; }
 
-        public DungeonMap(string name, string filename, int numberOfPlayers,
-            int numberOfDungeons) : base(name, filename, numberOfPlayers)
+        public DungeonMap(string name, string filename, List<Player> players,
+            int numberOfDungeons) : base(name, filename, players)
         {
             NumberOfDungeons = numberOfDungeons;
         }

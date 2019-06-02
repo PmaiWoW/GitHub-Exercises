@@ -12,19 +12,11 @@ namespace ex06_UML
 
         // Construtor da classe Map, com os parâmetros name, filename e
         // numberOfPlayers
-        public Map(string name, string filename, int numberOfPlayers)
+        public Map(string name, string filename, List<Player> players)
         {
-            players = new List<Player>();
+            this.players = players;
             Name = name;
             Filename = filename;
-            // Instancia Players, de número igual à variável numberOfPlayers
-            // dada, pedindo os parâmetros necessários para a instanciação
-            for (int id = 0; id < numberOfPlayers; id++)
-            {
-                Console.WriteLine("Insert player's name:");
-                string playerName = Console.ReadLine();
-                players.Add(new Player(id, playerName, 100.0, 100.0));
-            }
         }
 
         public override string ToString() => $"Name: {Name}\nFilename: " +

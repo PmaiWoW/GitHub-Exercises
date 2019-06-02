@@ -6,14 +6,9 @@ namespace ex38_poo
 {
     public class PNGTexture : Texture
     {
-        private string pngName;
-
         public PNGTexture(string textureFile) : base(textureFile)
         {
-            pngName = $"{textureFile}.png";
+            textureFile += ".png";
         }
-
-        public override string ToString() { return $"PNG File Name: " +
-                $"{pngName}"; }
     }
 }

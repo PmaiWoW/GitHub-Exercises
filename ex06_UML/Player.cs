@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace ex06_UML
+﻿namespace ex06_UML
 {
     public class Player
     {

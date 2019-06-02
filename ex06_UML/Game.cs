@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace ex06_UML
 {
@@ -6,6 +7,7 @@ namespace ex06_UML
     {
         internal int gamesPlayed;
         private int numberOfPlayers;
+        private List<Player> players;
         private Map dngMap, opnWrldMap, dngMap2, opnWrldMap2;
 
         internal void GameLoop()
@@ -18,10 +20,18 @@ namespace ex06_UML
             // Converte o input para int e guarda o mesmo na variável de 
             // mesmo tipo numberOfPlayers
             numberOfPlayers = Convert.ToInt32(Console.ReadLine());
+            // Instancia Players, de número igual à variável numberOfPlayers
+            // dada, pedindo os parâmetros necessários para a instanciação
+            for (int id = 0; id < numberOfPlayers; id++)
+            {
+                Console.WriteLine("Insert player's name:");
+                string playerName = Console.ReadLine();
+                players.Add(new Player(id, playerName, 100.0, 100.0));
+            }
             // Instanciar um objeto da classe DungeonMap, guardado numa
             // variável de tipo Map
             dngMap = new DungeonMap("Dungeon", "dng.PNG", 
-                numberOfPlayers, 5);
+                players, 5);
             // ToString() da classe DungeonMap
             Console.WriteLine($"\n{dngMap}");
             // Imprimir os nomes dos jogadores neste mapa
@@ -38,7 +48,7 @@ namespace ex06_UML
             // Instanciar um objeto da classe OpenWorldMap, guardado numa
             // variável de tipo Map
             opnWrldMap = new OpenWorldMap("openWrld",
-                "opnWrld.PNG", numberOfPlayers, 100.0f, 150.0f);
+                "opnWrld.PNG", players, 100.0f, 150.0f);
             // ToString() da classe OpenWorldMap
             Console.WriteLine($"\n{opnWrldMap}\n");
             // Imprimir os nomes dos jogadores neste mapa
@@ -55,7 +65,7 @@ namespace ex06_UML
             // Instanciar um objeto da classe DungeonMap, guardado numa
             // variável de tipo Map
             dngMap2 = new DungeonMap("Dungeon2", "dng2.PNG", 
-                numberOfPlayers, 5);
+                players, 5);
             // ToString() da classe DungeonMap
             Console.WriteLine($"\n{dngMap2}\n");
             // Imprimir os nomes dos jogadores neste mapa
@@ -72,7 +82,7 @@ namespace ex06_UML
             // Instanciar um objeto da classe OpenWorldMap, guardado numa
             // variável de tipo Map
             opnWrldMap2 = new OpenWorldMap("openWrld2",
-                "opnWrld2.PNG", numberOfPlayers, 100.0f, 150.0f);
+                "opnWrld2.PNG", players, 100.0f, 150.0f);
             // ToString() da classe OpenWorldMap
             Console.WriteLine($"\n{opnWrldMap2}\n");
             // Imprimir os nomes dos jogadores neste mapa
