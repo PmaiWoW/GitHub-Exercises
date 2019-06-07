@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
 
 namespace ex06_UML
 {
@@ -25,11 +24,11 @@ namespace ex06_UML
 
         public void PrintPlayerNames()
         {
-
             foreach(Player p in players)
             {
                 Console.WriteLine($"Player Name: {p.Name}");
             }
+            Console.WriteLine();
         }
     }
 }

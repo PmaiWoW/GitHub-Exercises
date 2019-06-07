@@ -18,7 +18,7 @@ namespace ex06_UML
             players = new List<Player>();
             {
                 // Pede ao utilizador o número de jogadores
-                Console.WriteLine("\nCreate Dungeon Map\nHow many players " +
+                Console.WriteLine("Create Dungeon Map\nHow many players " +
                     "will spawn?");
                 // Converte o input para int e guarda o mesmo na variável de 
                 // mesmo tipo numberOfPlayers
@@ -47,7 +47,7 @@ namespace ex06_UML
             players = new List<Player>();
             {
                 // Pede ao utilizador o número de jogadores
-                Console.WriteLine("\nCreate Dungeon Map\nHow many players " +
+                Console.WriteLine("Create Dungeon Map\nHow many players " +
                     "will spawn?");
                 // Converte o input para int e guarda o mesmo na variável de 
                 // mesmo tipo numberOfPlayers
@@ -76,7 +76,7 @@ namespace ex06_UML
             players = new List<Player>();
             {
                 // Pede ao utilizador o número de jogadores
-                Console.WriteLine("\nCreate Dungeon Map\nHow many players " +
+                Console.WriteLine("Create Dungeon Map\nHow many players " +
                     "will spawn?");
                 // Converte o input para int e guarda o mesmo na variável de 
                 // mesmo tipo numberOfPlayers
@@ -105,7 +105,7 @@ namespace ex06_UML
             players = new List<Player>();
             {
                 // Pede ao utilizador o número de jogadores
-                Console.WriteLine("\nCreate Dungeon Map\nHow many players " +
+                Console.WriteLine("Create Dungeon Map\nHow many players " +
                     "will spawn?");
                 // Converte o input para int e guarda o mesmo na variável de 
                 // mesmo tipo numberOfPlayers
@@ -122,7 +122,7 @@ namespace ex06_UML
             // Instanciar um objeto da classe OpenWorldMap, guardado numa
             // variável de tipo Map
             currentMap = new OpenWorldMap("openWrld2",
-                "opnWrld2.PNG", players, 100.0f, 150.0f);
+                "opnWrld2.PNG", players, 200.0f, 450.0f);
             // ToString() da classe OpenWorldMap
             Console.WriteLine($"\n{currentMap}\n");
             // Imprimir os nomes dos jogadores neste mapa
