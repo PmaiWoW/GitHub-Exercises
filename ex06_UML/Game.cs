@@ -5,88 +5,128 @@ namespace ex06_UML
 {
     public class Game
     {
-        internal int gamesPlayed;
+        static internal int gamesPlayed;
         private int numberOfPlayers;
-        private List<Player> players;
-        private Map dngMap, opnWrldMap, dngMap2, opnWrldMap2;
+        private Map currentMap;
 
         internal void GameLoop()
         {
             gamesPlayed = 0;
+            List<Player> players = new List<Player>();
 
-            // Pede ao utilizador o número de jogadores
-            Console.WriteLine("\nCreate Dungeon Map\nHow many players will " +
-                "spawn?");
-            // Converte o input para int e guarda o mesmo na variável de 
-            // mesmo tipo numberOfPlayers
-            numberOfPlayers = Convert.ToInt32(Console.ReadLine());
-            // Instancia Players, de número igual à variável numberOfPlayers
-            // dada, pedindo os parâmetros necessários para a instanciação
-            for (int id = 0; id < numberOfPlayers; id++)
+
+            players = new List<Player>();
             {
-                Console.WriteLine("Insert player's name:");
-                string playerName = Console.ReadLine();
-                players.Add(new Player(id, playerName, 100.0, 100.0));
+                // Pede ao utilizador o número de jogadores
+                Console.WriteLine("\nCreate Dungeon Map\nHow many players " +
+                    "will spawn?");
+                // Converte o input para int e guarda o mesmo na variável de 
+                // mesmo tipo numberOfPlayers
+                numberOfPlayers = Convert.ToInt32(Console.ReadLine());
+                // Instancia Players, de número igual à variável numberOfPlayers
+                // dada, pedindo os parâmetros necessários para a instanciação
+                for (int id = 0; id < numberOfPlayers; id++)
+                {
+                    Console.WriteLine("Insert player's name:");
+                    string playerName = Console.ReadLine();
+                    players.Add(new Player(id, playerName, 100.0, 100.0));
+                }
             }
             // Instanciar um objeto da classe DungeonMap, guardado numa
             // variável de tipo Map
-            dngMap = new DungeonMap("Dungeon", "dng.PNG", 
+            currentMap = new DungeonMap("Dungeon", "dng.PNG", 
                 players, 5);
             // ToString() da classe DungeonMap
-            Console.WriteLine($"\n{dngMap}");
+            Console.WriteLine($"\n{currentMap}");
             // Imprimir os nomes dos jogadores neste mapa
-            dngMap.PrintPlayerNames();
+            currentMap.PrintPlayerNames();
             // Aumentar o número de jogos jogados
             gamesPlayed++;
 
-            // Pede ao utilizador o número de jogadores
-            Console.WriteLine("\nCreate Open World Map\nHow many players " +
-                "will spawn?");
-            // Converte o input para int e guarda o mesmo na variável de 
-            // mesmo tipo numberOfPlayers
-            numberOfPlayers = Convert.ToInt32(Console.ReadLine());
+
+            players = new List<Player>();
+            {
+                // Pede ao utilizador o número de jogadores
+                Console.WriteLine("\nCreate Dungeon Map\nHow many players " +
+                    "will spawn?");
+                // Converte o input para int e guarda o mesmo na variável de 
+                // mesmo tipo numberOfPlayers
+                numberOfPlayers = Convert.ToInt32(Console.ReadLine());
+                // Instancia Players, de número igual à variável numberOfPlayers
+                // dada, pedindo os parâmetros necessários para a instanciação
+                for (int id = 0; id < numberOfPlayers; id++)
+                {
+                    Console.WriteLine("Insert player's name:");
+                    string playerName = Console.ReadLine();
+                    players.Add(new Player(id, playerName, 100.0, 100.0));
+                }
+            }
             // Instanciar um objeto da classe OpenWorldMap, guardado numa
             // variável de tipo Map
-            opnWrldMap = new OpenWorldMap("openWrld",
+            currentMap = new OpenWorldMap("openWrld",
                 "opnWrld.PNG", players, 100.0f, 150.0f);
             // ToString() da classe OpenWorldMap
-            Console.WriteLine($"\n{opnWrldMap}\n");
+            Console.WriteLine($"\n{currentMap}\n");
             // Imprimir os nomes dos jogadores neste mapa
-            opnWrldMap.PrintPlayerNames();
+            currentMap.PrintPlayerNames();
             // Aumentar o número de jogos jogados
             gamesPlayed++;
 
-            // Pede ao utilizador o número de jogadores
-            Console.WriteLine("\nCreate Dungeon Map\nHow many players will " +
-                "spawn?");
-            // Converte o input para int e guarda o mesmo na variável de 
-            // mesmo tipo numberOfPlayers
-            numberOfPlayers = Convert.ToInt32(Console.ReadLine());
+
+            players = new List<Player>();
+            {
+                // Pede ao utilizador o número de jogadores
+                Console.WriteLine("\nCreate Dungeon Map\nHow many players " +
+                    "will spawn?");
+                // Converte o input para int e guarda o mesmo na variável de 
+                // mesmo tipo numberOfPlayers
+                numberOfPlayers = Convert.ToInt32(Console.ReadLine());
+                // Instancia Players, de número igual à variável numberOfPlayers
+                // dada, pedindo os parâmetros necessários para a instanciação
+                for (int id = 0; id < numberOfPlayers; id++)
+                {
+                    Console.WriteLine("Insert player's name:");
+                    string playerName = Console.ReadLine();
+                    players.Add(new Player(id, playerName, 100.0, 100.0));
+                }
+            }
             // Instanciar um objeto da classe DungeonMap, guardado numa
             // variável de tipo Map
-            dngMap2 = new DungeonMap("Dungeon2", "dng2.PNG", 
+            currentMap = new DungeonMap("Dungeon2", "dng2.PNG", 
                 players, 5);
             // ToString() da classe DungeonMap
-            Console.WriteLine($"\n{dngMap2}\n");
+            Console.WriteLine($"\n{currentMap}\n");
             // Imprimir os nomes dos jogadores neste mapa
-            dngMap2.PrintPlayerNames();
+            currentMap.PrintPlayerNames();
             // Aumentar o número de jogos jogados
             gamesPlayed++;
 
-            // Pede ao utilizador o número de jogadores
-            Console.WriteLine("\nCreate Open World Map\nHow many players " +
-                "will spawn?");
-            // Converte o input para int e guarda o mesmo na variável de 
-            // mesmo tipo numberOfPlayers
-            numberOfPlayers = Convert.ToInt32(Console.ReadLine());
+
+            players = new List<Player>();
+            {
+                // Pede ao utilizador o número de jogadores
+                Console.WriteLine("\nCreate Dungeon Map\nHow many players " +
+                    "will spawn?");
+                // Converte o input para int e guarda o mesmo na variável de 
+                // mesmo tipo numberOfPlayers
+                numberOfPlayers = Convert.ToInt32(Console.ReadLine());
+                // Instancia Players, de número igual à variável numberOfPlayers
+                // dada, pedindo os parâmetros necessários para a instanciação
+                for (int id = 0; id < numberOfPlayers; id++)
+                {
+                    Console.WriteLine("Insert player's name:");
+                    string playerName = Console.ReadLine();
+                    players.Add(new Player(id, playerName, 100.0, 100.0));
+                }
+            }
             // Instanciar um objeto da classe OpenWorldMap, guardado numa
             // variável de tipo Map
-            opnWrldMap2 = new OpenWorldMap("openWrld2",
+            currentMap = new OpenWorldMap("openWrld2",
                 "opnWrld2.PNG", players, 100.0f, 150.0f);
             // ToString() da classe OpenWorldMap
-            Console.WriteLine($"\n{opnWrldMap2}\n");
+            Console.WriteLine($"\n{currentMap}\n");
             // Imprimir os nomes dos jogadores neste mapa
-            opnWrldMap.PrintPlayerNames();
+            currentMap.PrintPlayerNames();
             // Aumentar o número de jogos jogados
             gamesPlayed++;
         }

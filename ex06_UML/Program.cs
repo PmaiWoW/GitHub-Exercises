@@ -8,9 +8,8 @@ namespace ex06_UML
         {
             Game game = new Game();
             game.GameLoop();
-
-            Console.WriteLine($"Number of Games Played: {game.gamesPlayed}");
+            
+            Console.WriteLine($"\nNumber of Games Played: {Game.gamesPlayed}");
         }
-        
     }
 }

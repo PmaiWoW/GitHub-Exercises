@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace ex06_UML
 {
@@ -8,7 +9,7 @@ namespace ex06_UML
         // Declarar Variáveis
         public string Name { get; }
         protected string Filename { get; }
-        protected List<Player> players;
+        protected ICollection<Player> players;
 
         // Construtor da classe Map, com os parâmetros name, filename e
         // numberOfPlayers
@@ -24,9 +25,10 @@ namespace ex06_UML
 
         public void PrintPlayerNames()
         {
-            for (int i = 0; i < players.Count; i++)
+
+            foreach(Player p in players)
             {
-                Console.WriteLine($"Player {i + 1} Name: {players[i].Name}");
+                Console.WriteLine($"Player Name: {p.Name}");
             }
         }
     }

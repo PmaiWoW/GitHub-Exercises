@@ -6,9 +6,6 @@ namespace ex38_poo
 {
     public class PNGTexture : Texture
     {
-        public PNGTexture(string textureFile) : base(textureFile)
-        {
-            textureFile += ".png";
-        }
+        public PNGTexture(string filename) : base(filename + ".png") { }
     }
 }
