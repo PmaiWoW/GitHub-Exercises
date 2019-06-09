@@ -12,7 +12,7 @@ namespace ex06_UML
         internal void GameLoop()
         {
             gamesPlayed = 0;
-            List<Player> players = new List<Player>();
+            List<Player> players;
 
 
             players = new List<Player>();
