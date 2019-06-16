@@ -19,12 +19,9 @@ namespace ex57_poo
 
             Console.WriteLine("How many times to copy the value?");
             num = int.Parse(Console.ReadLine());
-
-            stringList = CopyValToList<string>("bruh.jpeg", num);
-            for (int i = 0; i < num; i++) { Console.WriteLine(stringList[i]); }
         }
 
-        static List<T> CopyValToList<T>(T val, int num)
+        static List<T> CopyValToList<T>(T val, int num) where T : struct
         {
             List<T> genericList = new List<T>();
             for (int i = 0; i < num; i++)
