@@ -27,7 +27,7 @@ namespace ex83_poo
                 new NPC(19.5f)
             };
 
-            NPC npc1 = npcs[0];
+            ref NPC npc1 = ref npcs[0];
             npc1.TakeHit(5f);
             
             foreach(NPC npc in npcs)
