@@ -32,9 +32,9 @@ namespace ex76_poo
                 $"{tupStats1.Item2}\nMedia1: {tupStats1.Item3}\nMediana1: " +
                 $"{tupStats1.Item4}\nModa1: {tupStats1.Item5}\n");
 
-            Console.WriteLine($"Minimo1: {tupStats2.Item1}\nMaximo1: " +
-                $"{tupStats2.Item2}\nMedia1: {tupStats2.Item3}\nMediana1: " +
-                $"{tupStats2.Item4}\nModa1: {tupStats2.Item5}\n");
+            Console.WriteLine($"Minimo2: {tupStats2.Item1}\nMaximo2: " +
+                $"{tupStats2.Item2}\nMedia2: {tupStats2.Item3}\nMediana2: " +
+                $"{tupStats2.Item4}\nModa2: {tupStats2.Item5}\n");
         }
     }
 }
